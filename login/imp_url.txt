@@ -1,0 +1,2 @@
+Course-baner: https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png
+Course-bannerbg: https://assets.interntheory.com/creative/courses/listpage/Course-bannerbg.jpg
