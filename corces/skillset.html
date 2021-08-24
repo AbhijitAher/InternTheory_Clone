@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certified Online Courses</title>
+    <style>
+        body{
+            background-color: rgb(223, 222, 222);
+        }
+        #heading{
+            width: 100%;
+            height: 200px;
+            background-color: rgba(3, 66, 66, 0.541); 
+        }
+        .intro h4{
+            text-align: left;
+            margin-left: 0px;
+            color: black;
+            margin-top: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .intro p{
+            text-align: left;
+            margin-left: 0px;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 30px;
+        }
+        #heading img{
+            width: 80%;
+            height: 200px;
+            margin-left: 120px;
+            margin-top: 0px;
+        }
+        #details{
+            margin-left: 9%;
+            margin-right: 9%;
+            width: auto;
+            height: 100px;
+        }
+        #data{
+            display: grid;
+            grid-template-columns: 23% 23% 23% 23%;
+            grid-gap: 2%;            
+        }
+        img{
+            width: 100%;
+            height: 140px;
+            border-top-left-radius:  5px;
+            border-top-right-radius: 5px;
+        }
+        #data div{
+            background-color: white;
+            border-radius: 5px;
+            height: 350px;
+            box-shadow: 1px 1px 1px 1px #888888;
+        }
+        h3 {
+            margin: 10px;
+            text-align: center;
+        }
+        p{
+            margin: 10px;
+            text-align: center;
+        }
+        h2{
+            margin: 10px;
+            text-align: right;
+            line-height: 5px;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h4{
+            margin: 10px;
+            text-align: right;
+            color:orange;
+        }
+        h5{
+            margin: 10px;
+            text-align: right;
+            color: gray;
+        }
+        #end{
+            width: 100%;
+            height: 250px;
+            background-color: rgb(46, 75, 87);
+            margin-top: 1100px;
+        }
+        #end p{
+            text-align: center;
+            color: white;
+        }
+        #btn1{
+            height: 30px;
+            border: none;
+            background-color: rgb(224, 5, 5);
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-top: 12px;
+            float: right;
+            box-shadow: 1px 1px 1px 1px #888888;
+
+        }
+        #btn2{
+            border: none;
+            height: 30px;
+            color: rgb(0, 162, 255);
+            background-color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 12px;
+            border-radius: 5px;
+            float: right;
+        }
+        #btn2:hover {
+            background-color: rgb(222, 247, 252);
+        }
+        #btn1:hover {
+            background-color: rgb(94, 2, 2);
+        }   
+    </style>
+</head>
+<body>
+    <div>
+        <div id="header"></div>
+        <div id="heading">
+            <img src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png">
+        </div>
+
+        <div id="details">
+            <div class="intro">
+                <h4>Certified Online Courses</h4>
+                <p>Upgrade your skills with Intern Theory's online learning platform. Enrol for any certified online 
+                    courses and get a step ahead of competition. Select from a range of skill based online courses and 
+                    kickstart your career.
+                </p>
+            </div>
+            <div id="data">
+                <!--course 1-->
+                <div class="course1">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/it.jpg" alt="">
+                    <h3>IT Starter Pack (4 Courses)</h3>
+                    <p>Learn the most demanded skills in the IT industry today. Sig ...</p>
+                    <h5>----------------------------------------------------<h5>
+                    <h2>₹ 15999</h2>
+                    <h4>EMI starts at ₹915/month</h4>
+                    <button id="btn1" onclick="cart()">ADD TO CART</button>
+                    <button id="btn2" onclick="more()">KNOW MORE</button>
+                </div>
+                <!--course 2-->
+                <div class="course1">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/finthumbnail.jpg" alt="">
+                    <h3>Finance Starter Pack </h3>
+                    <p>Learn the most demanded skills in the Finance industry today ...</p>
+                    <h5>----------------------------------------------------<h5>
+                    <h2>₹ 11999</h2>
+                    <h4>EMI starts at ₹687/month</h4>
+                    <button id="btn1" onclick="cart">ADD TO CART</button>
+                    <button id="btn2" onclick="more">KNOW MORE</button>
+                </div>
+                <!--course 3-->
+                <div class="course1">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png" alt="">
+                    <h3>Digital Marketing Course</h3>
+                    <p>Learn the art of digital marketing. Sign up for this online ...</p>
+                    <h5>----------------------------------------------------<h5>
+                    <h2>₹ 5999</h2>
+                    <h4>EMI starts at ₹343/month</h4>
+                    <button id="btn1" onclick="cart">ADD TO CART</button>
+                    <button id="btn2" onclick="more">KNOW MORE</button>
+                </div>
+                <!--course 4-->               
+                <div class="course1">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/stock-market-course.png" alt="">
+                    <h3>Stock Market Course</h3>
+                    <p>Learn how to trade and invest in stock markets. Enrol for th ...</p>
+                    <h5>----------------------------------------------------<h5>
+                    <h2>₹ 5999</h2>
+                    <h4>EMI starts at ₹343/month</h4>
+                    <button id="btn1" onclick="cart">ADD TO CART</button>
+                    <button id="btn2" onclick="more">KNOW MORE</button>
+                </div>
+                <!--course 5-->
+                <div class="course1">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png" alt="">
+                    <h3>Data Analytics With R Programming Course</h3>
+                    <p>Learn data science online.</p>
+                    <h5>----------------------------------------------------<h5>
+                    <h2>₹ 5999</h2>
+                    <h4>EMI starts at ₹343/month</h4>
+                    <button id="btn1" onclick="cart">ADD TO CART</button>
+                    <button id="btn2" onclick="more">KNOW MORE</button>
+                </div>
+                <!--course 6-->
+                <div class="course1">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png" alt="">
+                    <h3> Web Development Course</h3>
+                    <p>Learn the art of web design and web development. Join this o ...</p>
+                    <h5>----------------------------------------------------<h5>
+                    <h2>₹ 5999</h2>
+                    <h4>EMI starts at ₹343/month</h4>
+                    <button id="btn1" onclick="cart">ADD TO CART</button>
+                    <button id="btn2" onclick="more">KNOW MORE</button>
+                </div>
+                <!--course 7-->
+                <div class="course1">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png" alt="">
+                    <h3>Tally + GST Course</h3>
+                    <p>Sign up for this online tally and gst course and learn how t ...</p>
+                    <h5>----------------------------------------------------<h5>
+                    <h2>₹ 5999</h2>
+                    <h4>EMI starts at ₹343/month</h4>
+                    <button id="btn1" onclick="cart">ADD TO CART</button>
+                    <button id="btn2" onclick="more">KNOW MORE</button>
+                </div>
+                <!--course 8-->
+                <div class="course1">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png" alt="">
+                    <h3>Android App Development Using Kotlin Course</h3>
+                    <p>Learn the art of android app design</p>
+                    <h5>----------------------------------------------------<h5>
+                    <h2>₹ 5999</h2>
+                    <h4>EMI starts at ₹343/month</h4>
+                    <button id="btn1" onclick="cart">ADD TO CART</button>
+                    <button id="btn2" onclick="more">KNOW MORE</button>
+                </div>
+                <!--course 9-->
+                <div class="course1">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png" alt="">
+                    <h3>Advanced Excel Course</h3>
+                    <p>Learn how to trade and invest in stock markets. Enrol for th ...</p>
+                    <h5>----------------------------------------------------<h5>
+                    <h2>₹ 2999</h2>
+                    <h4>EMI starts at ₹172/month</h4>
+                    <button id="btn1" onclick="cart">ADD TO CART</button>
+                    <button id="btn2" onclick="more">KNOW MORE</button>
+                </div>
+                <!--course 10-->
+                <div class="course1">
+                    <img src="https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png" alt="">
+                    <h3>R Programming Course</h3>
+                    <p>Learn r programming online. Sign up for this online r progra ...</p>
+                    <h5>----------------------------------------------------<h5>
+                    <h2>₹ 2999</h2>
+                    <h4>EMI starts at ₹172/month</h4>
+                    <button id="btn1" onclick="cart">ADD TO CART</button>
+                    <button id="btn2" onclick="more">KNOW MORE</button>
+                </div>
+            </div>
+        </div>
+        <div id="end"></div>
+    </div> 
+</body>
+</html>
