@@ -5,69 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
     <title>Internship and Online courses for College Students|Intern Theory </title>
-    <style>
-        .image{
-          height:150px;
-         background-color: cyan;
-         display:flex;
-         gap: 300px;
-         position:sticky;
-
-         
-        }
-        .image div{
-            display: flex;
-            row-gap: 20px;
-        }
-        #img1 {
-            float:left;
-            width:50px;
-            height:50px;
+    <style> 
+      #navbar{
+            width:100%;
+            height: 80px;
+            background-color: white;
+            
+            position:sticky;
+            top:0px;
+            margin: 0px;
             
         }
-        
-       #signin{
+        #img1{
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+            margin: 10px;
+            
+        }
+        #img2{
+            width: 100px;
+            height: 50px;
+        }
+        #img3{
+         float:right;
+         margin:20px;
+         width: 30px;
+            height: 30px;
+        }
+        button{
+            background-color: red;
+            padding: 10px;
+            float: right;
+            width: 100px;
+            border-radius: 5px;
+            margin: 15px;
+            border:0;
+            color:white;
            
-           background-color: red;
-           font-size: 20px;
-           padding: 10px;
-           margin: 10px;
-           border-radius: 10px;
-           float:right;
-       }
-     #prefer{
-         width: 1000px;
-         height: 100px;
-         background-color: whitesmoke;
-         padding:50px;
-     }
-    
-      #search{
-          background-color: red;
-          width: 100px;
-          padding:10px;
-          color:white;
-          border-radius: 5px;
-      }
+        }
+       
      #box1{
-         margin-top: 200px;
+         margin:0px;
          height:400px;
          width:100%;
-
-         background-image: url("https://images.unsplash.com/photo-1622258415402-d6f597973b03?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+         
+         background-image: url("https://assets.interntheory.com/creative/Homepage-Banner.png");
      }
-     #box1 h2 {
-         padding: 100px;
+     #box1 p {
+         padding: 5px;
          text-align: center;
          color: white;
 
      }
-#box1 p{
+#box1 h2{
     text-align: center;
     color: white;
-    margin-top: 0px;
+    padding-top: 110px;
     
 }
  #box2{
@@ -156,7 +152,7 @@ float: left;
   }
    #imagetree{
        
-       width:500px;
+       width: 300px;;
        height: 300px;
        
        object-fit: cover;
@@ -166,27 +162,18 @@ float: left;
     </style>
 </head>
 <body>
-    <header>
-    <div class="image">
-        <div id="img1">
-            <i class="fas fa-bars"></i>
-       </div>
-       <div id="img2">
-    <img src="https://assets.interntheory.com/creative/logo.png" />
-       </div>
-       <div id ="img3">
-     <img  src="https://image.flaticon.com/icons/png/128/1170/1170678.png"/>
-       </div>
-       <div>
-      <button id="signin">SIGN IN</button>
+    <div id="navbar">
+        <img src="https://image.flaticon.com/icons/png/512/1828/1828859.png" id="img1"/>
+        <img src="https://assets.interntheory.com/creative/logo.png" id="img2"/>
+        <button onclick="signin()">SIGN IN</button>
+        <img src="https://image.flaticon.com/icons/png/512/4297/4297127.png" id="img3"/>
+        
       </div>
-     </div>
-    </header>
 
 
     <div id="box1">
         <h2>Let's Get You <b style="background-color: red;padding:5px;">Ready</b></h2>
-        <p>The One Stop Upgrade Your Resume.Expand Your Skillset.Do An Internship.Get Placed</p>
+        <p>The One Stop Upgrade Your Resume.Expand Your Skillset.Do An Internship.Get Placed.</p>
        </div>
         <section id="prefer">
         <label>Cities</label>
