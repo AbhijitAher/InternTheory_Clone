@@ -1,0 +1,11 @@
+Roushan:
+    Homepage Banner: https://assets.interntheory.com/creative/Homepage-Banner.png
+
+
+Sandeep:
+    Course-baner: https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png
+    Course-bannerbg: https://assets.interntheory.com/creative/courses/listpage/Course-bannerbg.jpg
+
+Abhi:
+    Web Banner: https://assets.interntheory.com/creative/Web-Banner.jpg
+
