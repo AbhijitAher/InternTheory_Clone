@@ -5,28 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certified Online Courses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
         body{
-            background-color: rgb(223, 222, 222);
+            background-color: rgb(241, 240, 240);
         }
         #heading{
             width: 100%;
             height: 200px;
-            background-color: rgba(3, 66, 66, 0.541); 
+            background-image: url(https://assets.interntheory.com/creative/courses/listpage/Course-bannerbg.jpg);
+            background-size: cover;
+            padding: 0px;
         }
         .intro h4{
             text-align: left;
             margin-left: 0px;
-            color: black;
             margin-top: 30px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
+            font-family: 'Roboto', sans-serif; 
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            color: rgba(0, 0,0, 0.54);
+            letter-spacing: 0.0075em;
+       }
         .intro p{
             text-align: left;
             margin-left: 0px;
-            color: black;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Roboto', sans-serif;            
             margin-bottom: 30px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            color: rgba(0, 0,0, 0.54);
+            margin-top: 0;
+            margin-bottom: 25px;
+
+
         }
         #heading img{
             width: 80%;
@@ -35,10 +56,11 @@
             margin-top: 0px;
         }
         #details{
+            display: grid;
+            grid-template-rows: auto;
             margin-left: 9%;
             margin-right: 9%;
             width: auto;
-            height: 100px;
         }
         #data{
             display: grid;
@@ -48,61 +70,84 @@
         img{
             width: 100%;
             height: 140px;
-            border-top-left-radius:  5px;
-            border-top-right-radius: 5px;
+            background-size: cover;
+            border-top-left-radius:  4px;
+            border-top-right-radius: 4px;
+        }
+        #data{
+            padding: 8px;
+            margin: 0;
         }
         #data div{
             background-color: white;
-            border-radius: 5px;
+            border-radius: 4px;
             height: 350px;
-            box-shadow: 1px 1px 1px 1px #888888;
+            box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 2px 1px -1px rgb(0 0 0 / 12%);
         }
         h3 {
-            margin: 10px;
-            text-align: center;
+            padding: 16px 16px 0px 16px;
+            text-align: left;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(0, 0,0, 0.87);
         }
         p{
-            margin: 10px;
-            text-align: center;
+            margin-left: 15px;
+            margin-right: 15px;
+            text-align: left;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(0, 0,0, 0.54);
+            margin-top: 3px;
         }
         h2{
-            margin: 10px;
+            margin-right:15px;
             text-align: right;
-            line-height: 5px;
+            line-height: 23px;
             font-size: 18px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+            font-weight: 700;
+            color: rgba(0, 0,0, 0.87);
+            font-family: 'Roboto', sans-serif;        }
         h4{
-            margin: 10px;
+            margin-right: 15px;
             text-align: right;
-            color:orange;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+            color: #ffb326;
         }
         h5{
-            margin: 10px;
+            margin: 10px 10px 0 10px;
             text-align: right;
             color: gray;
+        }
+        #clear{
+            clear:both;
         }
         #end{
             width: 100%;
             height: 250px;
             background-color: rgb(46, 75, 87);
-            margin-top: 1100px;
-        }
-        #end p{
-            text-align: center;
-            color: white;
+            margin-top: 50px;
         }
         #btn1{
             height: 30px;
             border: none;
             background-color: rgb(224, 5, 5);
             color: white;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            border-radius: 5px;
-            margin-right: 10px;
-            margin-top: 12px;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 4px;
             float: right;
             box-shadow: 1px 1px 1px 1px #888888;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 23px;
+            padding: 4px 8px;
+            min-width: 64px;
+            font-size: 0.8125rem;
+            margin: 10px 5px 10px 0px;
 
         }
         #btn2{
@@ -110,21 +155,28 @@
             height: 30px;
             color: rgb(0, 162, 255);
             background-color: white;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin-top: 12px;
-            border-radius: 5px;
+            border-radius: 4px;
             float: right;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 23px;
+            padding: 4px 8px;
+            min-width: 64px;
+            font-size: 0.8125rem;
+            margin: 10px 0px 10px 0px;
         }
         #btn2:hover {
             background-color: rgb(222, 247, 252);
         }
         #btn1:hover {
             background-color: rgb(94, 2, 2);
-        }   
+        }  
     </style>
 </head>
 <body>
-    <div>
+    <div id="maindiv">
         <div id="header"></div>
         <div id="heading">
             <img src="https://assets.interntheory.com/creative/courses/listpage/Course-banner1.png">
@@ -144,7 +196,7 @@
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/it.jpg" alt="">
                     <h3>IT Starter Pack (4 Courses)</h3>
                     <p>Learn the most demanded skills in the IT industry today. Sig ...</p>
-                    <h5>----------------------------------------------------<h5>
+                    <h5>--------------------------------------------</h5>
                     <h2>₹ 15999</h2>
                     <h4>EMI starts at ₹915/month</h4>
                     <button id="btn1" onclick="cart()">ADD TO CART</button>
@@ -155,7 +207,7 @@
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/finthumbnail.jpg" alt="">
                     <h3>Finance Starter Pack </h3>
                     <p>Learn the most demanded skills in the Finance industry today ...</p>
-                    <h5>----------------------------------------------------<h5>
+                    <h5>--------------------------------------------</h5>
                     <h2>₹ 11999</h2>
                     <h4>EMI starts at ₹687/month</h4>
                     <button id="btn1" onclick="cart">ADD TO CART</button>
@@ -166,7 +218,7 @@
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/digital-marketing-course.png" alt="">
                     <h3>Digital Marketing Course</h3>
                     <p>Learn the art of digital marketing. Sign up for this online ...</p>
-                    <h5>----------------------------------------------------<h5>
+                    <h5>--------------------------------------------</h5>
                     <h2>₹ 5999</h2>
                     <h4>EMI starts at ₹343/month</h4>
                     <button id="btn1" onclick="cart">ADD TO CART</button>
@@ -177,7 +229,7 @@
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/stock-market-course.png" alt="">
                     <h3>Stock Market Course</h3>
                     <p>Learn how to trade and invest in stock markets. Enrol for th ...</p>
-                    <h5>----------------------------------------------------<h5>
+                    <h5>--------------------------------------------</h5>
                     <h2>₹ 5999</h2>
                     <h4>EMI starts at ₹343/month</h4>
                     <button id="btn1" onclick="cart">ADD TO CART</button>
@@ -188,7 +240,7 @@
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/data-analytics-r-programming-course.png" alt="">
                     <h3>Data Analytics With R Programming Course</h3>
                     <p>Learn data science online.</p>
-                    <h5>----------------------------------------------------<h5>
+                    <h5>--------------------------------------------</h5>
                     <h2>₹ 5999</h2>
                     <h4>EMI starts at ₹343/month</h4>
                     <button id="btn1" onclick="cart">ADD TO CART</button>
@@ -199,7 +251,7 @@
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/web-development-course.png" alt="">
                     <h3> Web Development Course</h3>
                     <p>Learn the art of web design and web development. Join this o ...</p>
-                    <h5>----------------------------------------------------<h5>
+                    <h5>--------------------------------------------</h5>
                     <h2>₹ 5999</h2>
                     <h4>EMI starts at ₹343/month</h4>
                     <button id="btn1" onclick="cart">ADD TO CART</button>
@@ -210,7 +262,7 @@
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/tally-gst-course.png" alt="">
                     <h3>Tally + GST Course</h3>
                     <p>Sign up for this online tally and gst course and learn how t ...</p>
-                    <h5>----------------------------------------------------<h5>
+                    <h5>--------------------------------------------</h5>
                     <h2>₹ 5999</h2>
                     <h4>EMI starts at ₹343/month</h4>
                     <button id="btn1" onclick="cart">ADD TO CART</button>
@@ -221,7 +273,7 @@
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/android-app-development-kotlin-course.png" alt="">
                     <h3>Android App Development Using Kotlin Course</h3>
                     <p>Learn the art of android app design</p>
-                    <h5>----------------------------------------------------<h5>
+                    <h5>--------------------------------------------</h5>
                     <h2>₹ 5999</h2>
                     <h4>EMI starts at ₹343/month</h4>
                     <button id="btn1" onclick="cart">ADD TO CART</button>
@@ -232,7 +284,7 @@
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/advanced-excel-course.png" alt="">
                     <h3>Advanced Excel Course</h3>
                     <p>Learn how to trade and invest in stock markets. Enrol for th ...</p>
-                    <h5>----------------------------------------------------<h5>
+                    <h5>--------------------------------------------</h5>
                     <h2>₹ 2999</h2>
                     <h4>EMI starts at ₹172/month</h4>
                     <button id="btn1" onclick="cart">ADD TO CART</button>
@@ -243,7 +295,7 @@
                     <img src="https://assets.interntheory.com/creative/courses/thumbnails/r-programming-course.png" alt="">
                     <h3>R Programming Course</h3>
                     <p>Learn r programming online. Sign up for this online r progra ...</p>
-                    <h5>----------------------------------------------------<h5>
+                    <h5>--------------------------------------------</h5>
                     <h2>₹ 2999</h2>
                     <h4>EMI starts at ₹172/month</h4>
                     <button id="btn1" onclick="cart">ADD TO CART</button>
@@ -251,7 +303,7 @@
                 </div>
             </div>
         </div>
-        <div id="end"></div>
-    </div> 
+    </div>
+    <div id="end"></div> 
 </body>
 </html>
