@@ -5,8 +5,149 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(248, 248, 248)
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        #main{
+            width: 70%;
+            margin: 8% auto;
+            /* background-color: tomato; */
+            padding: 2%;
+            background-color: #fff;
+            box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 20%);
+        }
+        #content {
+            display: grid;
+            grid-template-columns: 65% 35%;
+            
+            background-color: #fff
+        }
+        h5 {
+            width: 100%;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            color: #3c4858;
+        }
+        #cart {
+            
+            padding: 0% 5% 5% 0%;
+
+        }
+        #checkout-box{
+            border-left: 1px solid black;
+            
+        }
+        #checkout {
+            background-color: white;
+            padding: 0% 5% 5% 10%;
+            height: fit-content;
+        }
+        .bottom_border{
+            border-bottom: 1px solid #3c4858;
+        }
+        button{
+            height: 30px;
+            border: none;
+            background-color: rgb(224, 5, 5);
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            border-radius: 4px;
+            /* float: right; */
+            box-shadow: 0px 1px 5px 0px rgb(0 0 0 / 20%), 0px 2px 2px 0px rgb(0 0 0 / 14%), 0px 3px 1px -2px rgb(0 0 0 / 12%);
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 23px;
+            padding: 4px 8px;
+            min-width: 50px;
+            font-size: 0.8125rem;
+            /* margin: 10px 5px 10px 0px; */
+        }
+        p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #3c4858;
+            
+        }
+        .top_p {
+            padding-top: 8px;
+        }
+        h3 {
+            margin-top: 20px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            color: rgba(0, 0, 0, 0.87);
+        }
+        input {
+            height: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: rgba(0, 0, 0, 0.87);
+            cursor: text;
+            border: none;
+            border-bottom: 1px solid black;
+            padding : 6px 0px 7px;;
+        }
+        .go {
+            margin: 0, 0, 0, 0;
+            box-sizing: border-box;
+        }
+        .checkout_button{
+            width: 100%;
+            margin: 15px 5px 15px 5px;
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <div id="main">
+        <h5>Cart</h5>
+        <div id="content">
+            <div id="cart"></div>
+            <div id= "checkout-box">
+                <div id="checkout">
+                    <div id="amount" class="bottom_border">
+                        <p class="top_p">Amount</p>
+                        <p></p>
+                    </div>
+                    
+                    <div id="cgst" class="bottom_border">
+                        <p class="top_p">CGST 9%</p>
+                        <p></p>
+                    </div>
+                    
+                    <div id="sgst" class="bottom_border">
+                        <p class="top_p">SGST 9%</p>
+                        <p></p>
+                    </div>
+                    
+                    <div id="total">
+                        <h3>Total:</h3>
+                        <h3></h3>
+                    </div>
+                    <div id="coupon">
+                        <input type="text" placeholder="Coupon Code"/>
+                        <button type="submit" class="go">Go</button>
+                    </div>
+                    <div id="checkout_btn">
+                        <button class="checkout_button">CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
+</html>   
