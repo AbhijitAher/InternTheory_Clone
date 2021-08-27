@@ -9,3 +9,24 @@ Sandeep:
 Abhi:
     Web Banner: https://assets.interntheory.com/creative/Web-Banner.jpg
 
+
+Flow:
+	Roushan Homepage -  Homepage, left-Grid, sign-in
+	Abhi (through sign in button)Login and Signup
+
+	Sandeep - Intership
+	Sandeep - Sort functionality
+		- View and Apply
+		- Add to cart
+			
+	
+Local Storage   - Cart
+		- Login
+		- All Products
+
+Sort Functionality
+Left Side Menu
+Pop-ups: empty cart, Application successful.
+Cart Price and Discount  
+
+	

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+
+    <title> Hire Interns and Freshers From India | Company REgistration | Intern Theory </title>
+
+    <link rel="shortcut icon" href="https://s3.ap-south-1.amazonaws.com/interntheory/creative/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+</head>
+    <style>
+        *, *::before, *::after {
+            box-sizing: inherit;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #parent_container{
+            height: 800px;
+            width: 100%;
+            background-image: url("https://assets.interntheory.com/creative/Web-Banner.jpg");
+            border: 1px solid black;
+        }
+        #signup-box{
+            display: grid;
+            grid-template-areas:  'signup'
+                                   'r-box' 
+                                   'or'
+                                   'input1 input2'
+                                   'input3'
+                                   'input4'
+                                   'input5'
+                                   'signup-btn';
+            height: 530px;
+            width: 380px;
+            background-color: #fff;
+            border-radius: 4px;
+            padding: 30px 30px;
+            box-shadow: 0px 8px 10px -5px rgb(0 0 0 / 20%), 0px 16px 24px 2px rgb(0 0 0 / 14%), 0px 6px 30px 5px rgb(0 0 0 / 12%);
+            margin: 100px auto;
+        }
+        #s_c_buttons{
+            height: 48px;
+            background: transparent;
+        }
+        h2{
+            grid-area: 'signup';
+            margin: 0px;
+            font-weight: 400;
+            line-height: 1.33;
+            letter-spacing: 0em;
+        }
+        .red-box{
+            border: 1px dashed rgb(239, 147, 154);
+            margin-top: 10px;
+            border-radius: 5px;
+            padding: 7px 7px;
+            grid-area: 'r-box';
+            background: rgb(252, 239, 241);
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        h3{
+            text-align: center;
+            grid-area: 'or';
+            padding-top: 5px;
+            margin: 0px;
+            color: #999;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.75;
+            letter-spacing: 0.00938em;
+        }
+        #input1{
+            width: 44%;
+            grid-area: 'input1';
+            color: rgba(0, 0, 0, 0.54);
+            line-height:1.1875em;
+            border: 0;
+            margin: 0;
+            padding: 8px;
+            background: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            border-bottom: 1px solid black;
+        }
+        #input2{
+            width: 44%;
+            grid-area: 'input2';
+            color: rgba(0, 0, 0, 0.54);
+            line-height:1.1875em;
+            border: 0;
+            margin: 10px 0px 10px 4px;
+            padding: 8px;
+            background: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            border-bottom: 1px solid black;
+        }
+        #input3{
+            width: 95%;
+            grid-area: 'input2';
+            color: rgba(0, 0, 0, 0.54);
+            line-height:1.1875em;
+            border: 0;
+            margin: 10px 0px;
+            padding: 8px;
+            background: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            border-bottom: 1px solid black;
+        }
+        #input4{
+            width: 95%;
+            grid-area: 'input2';
+            color: rgba(0, 0, 0, 0.54);
+            line-height:1.1875em;
+            border: 0;
+            margin: 10px 0px;
+            padding: 8px;
+            background: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            border-bottom: 1px solid black;
+        }
+        #input5{
+            width: 95%;
+            grid-area: 'input2';
+            color: rgba(0, 0, 0, 0.54);
+            line-height:1.1875em;
+            border: 0;
+            margin: 10px 0px;
+            padding: 8px;
+            background: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            border-bottom: 1px solid black;
+        }
+        #input6{
+            width: 95%;
+            grid-area: 'input2';
+            color: rgba(0, 0, 0, 0.54);
+            line-height:1.1875em;
+            border: 0;
+            margin: 10px 0px;
+            padding: 8px;
+            background: none;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            border-bottom: 1px solid black;
+        }
+        h4{
+            grid-area: 'h4';
+            margin: 0px;
+            padding: 0px;
+            text-align: left;
+            grid-area: 'h4';
+            padding-top: 5px;
+            margin: 0px;
+            color: #999;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.75;
+            letter-spacing: 0.00938em;
+        }
+        #signup-btn{
+            grid-area: 'signup-btn';
+            margin: 8px;
+            color: #DF1E2E;
+            background-color: #fff;
+            border: 1px solid rgba(223, 30, 46, 0.5);
+            padding: 5px 16px;
+            min-width: 64px;
+            line-height: 25px;
+            font-size: 15px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.02857em;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+        }
+
+    </style>
+<body>
+    <header>
+
+    </header>
+    <div id="parent_container">
+
+        <div id="signup-box">
+
+            <h2>Start Hiring Interns</h2>
+
+            <h4>Already have an account? <a href="login_company.html">Sign in</a></h4>
+
+            <div class="red-box">If you are a student looking for internships, please register as a student by clicking <a href="signup_student.html">here</a></div>
+
+            <h3>OR</h3>
+
+            <form>
+                <input id="input1" placeholder="First Name" type="text"/>
+
+                <input id="input2" placeholder="Last Name" type="text"/>
+
+                <input id="input3" placeholder="Company Name*" type="text"/>
+
+                <input id="input4" placeholder="Mobile Number*" type="number"/>
+                
+                <input id="input5" placeholder="Corporate Email" type="email"/>
+                
+                <input id="input6" placeholder="Enter Password*" type="password"/>
+
+                
+
+            </form>
+            
+            <button id= 'signup-btn' type="submit">Proceed to posting internship</button>
+
+        </div>
+    </div>
+</body>
+</html>
