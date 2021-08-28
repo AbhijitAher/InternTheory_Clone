@@ -5,7 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Internships</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+        }
        body{
            background-color: rgb(241, 240, 240);
        }
@@ -22,10 +30,13 @@
            height: auto;
            background-color: white;
            float: left;
+           margin-bottom: 20px;
+           border-radius: 5px;
+           box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 2px 1px -1px rgb(0 0 0 / 12%);
        }
        .details{
            margin: 20px;
-           font-family: Arial, sans-serif;
+           font-family: 'Roboto', sans-serif;            
            color: rgb(83, 83, 83);
        }
        .intern1 {
@@ -39,6 +50,7 @@
        }
        button{
            background-color:white;
+           width: 130px;
            color: rgb(0, 171, 238);
            border: white;
            margin-top: 80px;
@@ -63,7 +75,7 @@
            height: 40px;
            border-radius: 5px;
            color: rgb(0, 47, 255);
-           font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           font-family: 'Roboto', sans-serif;            
            font-size: 15px;
        }
        .details button:hover{
@@ -72,7 +84,20 @@
        .image :hover{
         opacity: 0.8;
        }
-       
+       .details h3{
+           margin-top: 15px;
+           margin-bottom: 10px;
+       }
+       .intern1 p {
+        margin-bottom: 10px;
+       }
+       #end{
+            width: 100%;
+            height: 250px;
+            background-color: #446478;
+            margin-top: 50px;
+            clear: both;
+        }
     </style>
 </head>
 <body>
@@ -82,22 +107,22 @@
             <img src="https://assets.interntheory.com/creative/Internship_left_course_add_01.png">
         </div>
 
-        <div class="course">
-            <div class="details">
-                <p style="font-family:Arial,sans-serif; font-size: 25px; margin-bottom: 0px;">All Internships</p>
+        <div class="course" >
+            <div class="details" id="allCourse">
+                <p style="font-family: 'Roboto', sans-serif; font-size: 25px; margin-bottom: 0px;">All Internships</p>
                 <!-- Intern 1 -->
-                <div class="intern1">
+                <div class="intern1"  id="d1">
                     <img src="https://assets.interntheory.com/creative/logo.png">
                     
                     <div class="details1">
                         <h3>Develop Your Skillset</h3>
-                    <p>Online Skill Development Programs
+                        <p>Online Skill Development Programs
 
                         Taught by Industry Experts Internship
                         
                         Certified Courses</p>
-                    <p>Guaranteed Internship Opportunities</p>
-                    <h4>Learn Industry-Demanded Skills</h4>
+                        <p>Guaranteed Internship Opportunities</p>
+                        <h4>Learn Industry-Demanded Skills</h4>
                     </div>  
                     <div class="apply1">
                         <p>4-6 Weeks</p>
@@ -106,19 +131,18 @@
                 </div>
                 <div id="line"></div>
                 <!-- Intern 2 -->
-                <div class="intern1">
+                <div class="intern1" id="d2">
                     <img src="https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg">
                     
                     <div class="details1">
                         <h3>Marketing Ambassador - Work from Home</h3>
-                    <p>Laugh Out Loud Ventures
+                        <p>Laugh Out Loud Ventures
 
                         Work From Home Internship
                         
                         Marketing</p>
-                    <p>Bangalore,Chennai,Delhi,Mumbai,Pune,Thane</p>
-                    <h4>Stipend: 3000 - 10000 per month
-                    </h4>
+                        <p  class="location">Bangalore,Chennai,Delhi,Mumbai,Pune,Thane</p>
+                        <h4>Stipend: 3000 - 10000 per month</h4>
                     </div>  
                     <div class="apply2">
                         <p>4 Weeks left</p>
@@ -127,7 +151,7 @@
                 </div>
                 <div id="line"></div>
                 <!-- Intern 3 -->
-                <div class="intern1">
+                <div class="intern1" id="d3">
                     <img src="https://assets.interntheory.com/uploads/company/logos/1e588197bf4a49a55167605daf188f4b47af896b.jpg">
                     
                     <div class="details1">
@@ -137,7 +161,7 @@
                         Work From Home Internship
                         
                         Education And Training</p>
-                    <p>Mumbai,Delhi,Chandigarh,Gurgaon,Hyderabad,Bangalore,Pune</p>
+                    <p  class="location">Mumbai,Delhi,Chandigarh,Gurgaon,Hyderabad,Bangalore,Pune</p>
                     <h4>
                         Stipend: 20000 - 40000 per month
                     </h4>
@@ -149,7 +173,7 @@
                 </div>
                 <div id="line"></div>
                 <!-- Intern 4 -->
-                <div class="intern1">
+                <div class="intern1" id="d4">
                     <img src="https://assets.interntheory.com/uploads/company/companylogos/7dc6fc10d2f3003e208767622d8703413c754dc0/7c7220e5f7b71c431184b7d05be6acd0262a89b3com.jpg">
                     
                     <div class="details1">
@@ -159,7 +183,7 @@
                         Full Time Internship
                         
                         Social Media</p>
-                    <p>Mumbai</p>
+                    <p class="location">Mumbai</p>
                     <h4>
                         Stipend: 5000 per month
                     </h4>
@@ -171,7 +195,7 @@
                 </div>
                 <div id="line"></div>
                 <!-- Intern 5 -->
-                <div class="intern1">
+                <div class="intern1" id="d5">
                     <img src="https://assets.interntheory.com/uploads/company/logos/53540013c62ed7b23fe1534aaa8fe94c303d2985.jpg">
                     
                     <div class="details1">
@@ -181,7 +205,7 @@
                         Work From Home Internship
                         
                         Content Writing</p>
-                    <p>Narnaul,Delhi,Mumbai,Gurgaon,Kolkata,Ahmedabad,Surat,Chennai</p>
+                    <p  class="location">Narnaul,Delhi,Mumbai,Gurgaon,Kolkata,Ahmedabad,Surat,Chennai</p>
                     <h4>
                         Stipend: Expenses Covered
                     </h4>
@@ -193,7 +217,7 @@
                 </div>
                 <div id="line"></div>
                 <!-- Intern  6-->
-                <div class="intern1">
+                <div class="intern1" id="d6">
                     <img src="https://assets.interntheory.com/uploads/company/logos/f09d2dbf9a5c5c0eff067b703b279aeb0089b64c.jpg">
                     <div class="details1">
                         <h3>Human Resources/HR</h3>
@@ -202,7 +226,7 @@
                         Part Time,Work From Home Internship
                         
                         Human Resources</p>
-                    <p>Delhi,Mumbai</p>
+                    <p class="location">Delhi,Mumbai</p>
                     <h4>
                         Stipend: None
                     </h4>
@@ -214,7 +238,7 @@
                 </div>
                 <div id="line"></div>
                 <!-- Intern 7 -->
-                <div class="intern1">
+                <div class="intern1" id="d7">
                     <img src="https://assets.interntheory.com/uploads/company/companylogos/53488030f892d6461aed81af622e2e33f2be459c/ab86ddce842adb4c0cddceee1cf244993bf8d98fcom.jpg">
                     
                     <div class="details1">
@@ -222,7 +246,7 @@
                     <p>Part Time,Work From Home Internship
 
                         Software Development</p>
-                    <p>Bangalore</p>
+                    <p class="location">Bangalore</p>
                     <h4>
                         Stipend: 1000 per month
                     </h4>
@@ -233,9 +257,8 @@
                     </div>  
                 </div>
                 <div id="line"></div>
-                <!--2-->
-                <!-- Intern 2 -->
-                <div class="intern1">
+                <!-- Intern 8 -->
+                <div class="intern1" id="d8">
                     <img src="https://assets.interntheory.com/uploads/company/companylogos/62362fbf882221470f099d8d0a119df93ce19831/7e34b7356b30b3696d14fcab94c6e8989a42fd69com.jpg">
                     
                     <div class="details1">
@@ -245,7 +268,7 @@
                         Work From Home Internship
                         
                         Marketing</p>
-                    <p>Bangalore,Chennai,Delhi,Mumbai,Pune,Thane</p>
+                    <p class="location">Bangalore,Chennai,Delhi,Mumbai,Pune,Thane</p>
                     <h4>Stipend: 3000 - 10000 per month
                     </h4>
                     </div>  
@@ -255,8 +278,8 @@
                     </div>  
                 </div>
                 <div id="line"></div>
-                <!-- Intern 3 -->
-                <div class="intern1">
+                <!-- Intern 9 -->
+                <div class="intern1" id="d9">
                     <img src="https://assets.interntheory.com/uploads/company/logos/1e588197bf4a49a55167605daf188f4b47af896b.jpg">
                     
                     <div class="details1">
@@ -266,7 +289,7 @@
                         Work From Home Internship
                         
                         Education And Training</p>
-                    <p>Mumbai,Delhi,Chandigarh,Gurgaon,Hyderabad,Bangalore,Pune</p>
+                    <p class="location">Mumbai,Delhi,Chandigarh,Gurgaon,Hyderabad,Bangalore,Pune</p>
                     <h4>
                         Stipend: 20000 - 40000 per month
                     </h4>
@@ -277,8 +300,8 @@
                     </div>  
                 </div>
                 <div id="line"></div>
-                <!-- Intern 4 -->
-                <div class="intern1">
+                <!-- Intern 10 -->
+                <div class="intern1" id="d10">
                     <img src="https://assets.interntheory.com/uploads/company/companylogos/7dc6fc10d2f3003e208767622d8703413c754dc0/7c7220e5f7b71c431184b7d05be6acd0262a89b3com.jpg">
                     
                     <div class="details1">
@@ -288,7 +311,7 @@
                         Full Time Internship
                         
                         Social Media</p>
-                    <p>Mumbai</p>
+                    <p class="location">Mumbai</p>
                     <h4>
                         Stipend: 5000 per month
                     </h4>
@@ -299,8 +322,8 @@
                     </div>  
                 </div>
                 <div id="line"></div>
-                <!-- Intern 5 -->
-                <div class="intern1">
+                <!-- Intern 11 -->
+                <div class="intern1" id="d11">
                     <img src="https://assets.interntheory.com/uploads/company/logos/53540013c62ed7b23fe1534aaa8fe94c303d2985.jpg">
                     
                     <div class="details1">
@@ -310,7 +333,7 @@
                         Work From Home Internship
                         
                         Content Writing</p>
-                    <p>Narnaul,Delhi,Mumbai,Gurgaon,Kolkata,Ahmedabad,Surat,Chennai</p>
+                    <p class="location">Narnaul,Delhi,Mumbai,Gurgaon,Kolkata,Ahmedabad,Surat,Chennai</p>
                     <h4>
                         Stipend: Expenses Covered
                     </h4>
@@ -321,8 +344,8 @@
                     </div>  
                 </div>
                 <div id="line"></div>
-                <!-- Intern  6-->
-                <div class="intern1">
+                <!-- Intern  12-->
+                <div class="intern1" id="d12">
                     <img src="https://assets.interntheory.com/uploads/company/logos/f09d2dbf9a5c5c0eff067b703b279aeb0089b64c.jpg">
                     <div class="details1">
                         <h3>Human Resources/HR</h3>
@@ -331,7 +354,7 @@
                         Part Time,Work From Home Internship
                         
                         Human Resources</p>
-                    <p>Delhi,Mumbai</p>
+                    <p class="location">Delhi,Mumbai</p>
                     <h4>
                         Stipend: None
                     </h4>
@@ -342,8 +365,8 @@
                     </div>  
                 </div>
                 <div id="line"></div>
-                <!-- Intern 7 -->
-                <div class="intern1">
+                <!-- Intern 13 -->
+                <div class="intern1" id="d13">
                     <img src="https://assets.interntheory.com/uploads/company/companylogos/53488030f892d6461aed81af622e2e33f2be459c/ab86ddce842adb4c0cddceee1cf244993bf8d98fcom.jpg">
                     
                     <div class="details1">
@@ -351,7 +374,8 @@
                     <p>Part Time,Work From Home Internship
 
                         Software Development</p>
-                    <p>Bangalore</p>
+                    <p class="location"
+                    >Bangalore</p>
                     <h4>
                         Stipend: 1000 per month
                     </h4>
@@ -364,9 +388,33 @@
                 <div id="line"></div>
             </div>
         </div>
+        <div id="end"></div>
    </div>
 </body>
 </html>
+
+<script>
+    var intern = document.getElementById("allCourse")
+    //console.log(intern);
+
+    localStorage.setItem('allIntern', "[]")
+
+    var c_length = intern.childElementCount;
+    //console.log(c_length);
+    //console.log(intern.childNodes);
+
+   var get_intern = JSON.parse(localStorage.getItem('allIntern'))
+
+   for (var i = 5; i <= c_length*3; i=i+6){
+        //console.log(intern.childNodes[i]);
+        var current = intern.childNodes[i];
+        console.log(current);
+   }
+
+   let filter_item = current;
+
+
+</script>
 
 
 
