@@ -181,8 +181,10 @@
         }
         #end{
             width: 100%;
-            height: 250px;
-            background-color: #446478;
+            height: 1px;
+            background-color:rgb(241, 240, 240);
+            margin-top: 0px;
+            margin-bottom: 0px;
             clear: both;
         }
         .redetails{
@@ -235,6 +237,80 @@
         .recprice button:hover {
             background-color: rgb(222, 247, 252);
         }
+        #main {
+            width: 100%;
+            height: 30%;
+            background-color: #446478;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+        }
+        #content {
+            padding: 1% 8%;
+        }
+        #upper_part {
+            display: grid;
+            grid-template-columns: 10% 25% 25% 25%;
+            gap: 3%;
+            margin: auto;
+        }
+        #detail {
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%;
+            gap: 2%;
+            border-bottom: 1px solid rgb(204, 200, 200);
+        }
+        #year {
+            text-align: center;
+        }
+        #upper_part{
+            padding-top: 30px;
+        }
+        #upper_part p{
+            padding-top: 10px;
+        }
+        #upper_part h4 {
+            border-bottom: 1px solid rgb(207, 202, 202);
+            padding-bottom: 10px;
+            color: white;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+        }
+        #upper_part h3 {
+            font-size: 14px;
+            color: white;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+        }
+        #lower_part{
+            padding-top: 30px;
+        }
+        #lower_part h3{
+          font-size: 14px;
+            color: white;
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 400;
+        }
+        #main img {
+            width: 20%;
+            margin: 5px;
+        }
+        #image {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+        #detail{
+            padding-left: 50px;
+            text-align: center;
+        }
+
+
     </style>
 </head>
 <body>
@@ -321,7 +397,7 @@
                     <div class="blank3"></div>
                     <div class="recprice">
                         <h4>Rs. 5999</h4>
-                        <button> <a style="color: rgb(0, 47, 255);text-decoration: none;" href="skillset.html" target="_blank"> KNOW MORE</a></button>
+                        <button> <a style="color: rgb(0, 47, 255);text-decoration: none;" href="onlinecourse.html"> KNOW MORE</a></button>
                     </div>
                 </div>
                 <div id="line"></div>
@@ -329,5 +405,55 @@
         </div>
    </div>
    <div id="end"></div>
+   <div id="main">
+    <div id="content">
+         <div id="upper_part">
+             <div id="image">
+                 <img src="https://image.flaticon.com/icons/png/512/220/220200.png"/>
+                 <img src="https://image.flaticon.com/icons/png/512/1409/1409945.png"/>
+                 <img src="https://image.flaticon.com/icons/png/512/124/124021.png"/>
+                 <img src="https://image.flaticon.com/icons/png/512/2111/2111463.png"/>
+             </div>
+             <div id="place">
+                 <h4>BY PLACE</h4>
+                 <p>Internships In Mumbai</p>
+                 <p>Internships In Delhi</p>
+                 <p>Internships In Bangalore</p>
+                 <p>Internships In Pune</p>
+                 <p>Internships In Hyderabad</p>
+             </div>
+             <div id="profile">
+                     <h4>BY PROFILE</h4>
+                     <p>Marketing Internships</p>
+                     <p>Business Development Internships</p>
+                     <p>Content Writing Internships</p>
+                     <p>Graphic Designing Internships</p>
+                     <p>HR Internships</p>
+                     <p>Engineering Internships</p>
+             </div>
+             <div id="type">
+                 <h4>BY TYPE</h4>
+                 <p>Full Time Internships</p>
+                 <p>Part Time Internships</p>
+                 <p>Work From Home Internships</p>
+             </div>
+         </div>
+         <div id="lower_part">
+             <div id="detail">
+                 <h3>FIND INTERNSHIP</h3>
+                 <h3>POST INTERNSHIP</h3>
+                 <h3>COURSES</h3>
+                 <h3>TERMS AND CONDITIONS</h3>
+                 <h3>PRIVACY POLICY</h3>
+                 <h3>CONTACT US</h3>
+                 <h3>ABOUT US</h3>
+                 <h3>SITEMAP</h3>
+             </div>
+             <div id="year">
+                 <h3>© 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.</h3>
+             </div>
+         </div>
+   </div>
+
 </body>
 </html>
